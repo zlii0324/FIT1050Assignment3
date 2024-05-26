@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Apex Home Service</title>
+        <link rel="icon" href="./imgs/icon/no_text_logo.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link href="css/corestyle.css" type="text/css" rel="stylesheet">
+        <link href="css/gallerystyle.css" type="text/css" rel="stylesheet">
+        <link href = "css/navigationstyle.css" type="text/css" rel="stylesheet">
+        <link href = "css/herostyle.css" type="text/css" rel="stylesheet">
+        <link href = "css/cardstyle.css" type="text/css" rel="stylesheet">
+        <link href = "css/contactstyle.css" type="text/css" rel="stylesheet">
+        <link href = "css/footerstyle.css" type="text/css" rel="stylesheet">
+
+
+        <script src="js/zoom.js"></script>
+        <script src="js/showPicture.js"></script>
+        
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+    
+ 
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="imgs/logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="#hero-1785" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#services-1628" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#gallery-45" class="cs-li-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Our Works
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="#Services1" class="cs-li-link cs-drop-link">Interior renovation</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="#Services2" class="cs-li-link cs-drop-link">Structural renovation</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="#Services2" class="cs-li-link cs-drop-link">New Construction</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="#Services3" class="cs-li-link cs-drop-link">Swimmingpool Renovation</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="#Services4" class="cs-li-link cs-drop-link">Furnitures</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>  
+            <a href="#contact-1150" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+        </div>
+    </header>
+
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1785">
+        
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">We Provide Best Renovation Solustion</span>
+                <h1 class="cs-title">Build Your Dream House</h1>
+                <p class="cs-text">
+                    Build your dream space with confidence, precision, and the expertise needed for perfection. This is the renovation partner you've been searching for.
+                </p>
+                <div class="cs-button-group">
+                    <a href="#contact-1150" class="cs-button-solid cs-button1">Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+
+        <picture class="cs-background">
+            <img loading="lazy" decoding="async" src="imgs/herobgp.jpeg" alt="field" width="1920" height="1200" aria-hidden="true">
+        </picture>
+
+        
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+    
+    <section id="services-1628">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Our Services</span>
+                    <h2 class="cs-title">Renovate your home with our professional team</h2>
+                </div>
+                <p class="cs-text">
+                    At Apex Home Improvement, we always guarantee exceptional work when it comes to our renovation services; you can be sure that we will have your project completed on time and on budget. 
+                </p>
+            </div>                  
+            <ul class="cs-card-group">
+                <li id = "Services1" class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <img loading="lazy" decoding="async" src="imgs/service/indoorRenovation.jpg" alt="indoor renovate" width="413" height="420">
+                        </picture>
+                        <h3 class="cs-h3">Interior renovation</h3>
+                        <p class="cs-item-text">
+                            We provide interior decoration, select the trustable suppliers, offer the best price and deliver the best quality work.
+                        </p>
+                        <span class="cs-fake-link">
+                            Get Started
+                            <img class="cs-icon" src="imgs/rightArrow.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                        </span>
+                    </a>
+                </li>
+                <li id = "Services2" class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <img loading="lazy" decoding="async" src="imgs/service/structure.jpeg" alt="Rebuild structure" width="413" height="420">
+                        </picture>
+                        <h3 class="cs-h3">Rebuild structure</h3>
+                        <p class="cs-item-text">
+                            For those customers who want a fractory new house, we can build the houe start from the very beginning and providing best quality houe ever.
+                        </p>
+                        <span class="cs-fake-link">
+                            Get Started
+                            <img class="cs-icon" src="imgs/rightArrow.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                        </span>
+                    </a>
+                </li>
+                <li id ="Services3" class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <img loading="lazy" decoding="async" src="imgs/service/Swimmingpool.jpg" alt="build swimmingpool" width="413" height="420">
+                        </picture>
+                        <h3 class="cs-h3">Build swimming pool</h3>
+                        <p class="cs-item-text">
+                            Yard too empty? Wanna a swimming pool party at home? Need exercise? We can help you to build your own swimming pool.
+                        </p>
+                        <span class="cs-fake-link">
+                            Get Started
+                            <img class="cs-icon" src="imgs/rightArrow.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                        </span>
+                    </a>
+                </li>
+                <li id="Services4" class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <img loading="lazy" decoding="async" src="imgs/service/woodenWork.jpeg" alt="Wooden work" width="413" height="420">
+                        </picture>
+                        <h3 class="cs-h3">Wooden work</h3>
+                        <p class="cs-item-text">
+                            For our customers, we can provide fully customized wooden furniture with best quality and 10-years-warrenty.
+                        </p>
+                        <span class="cs-fake-link">
+                            Get Started
+                            <img class="cs-icon" src="imgs/rightArrow.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-45">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Gallery</span>
+                <h2 class="cs-title">Renovation services in Sydney, Australia</h2>
+                <p class="cs-text">
+                    Our team has extensive experience in the building and construction industry. With more than 10 years of experience and expertise, we have gained in-depth knowledge in this field.
+                </p>
+            </div>
+            <ul class="cs-image-group">
+                <!-- Image 1 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery1.jpeg">
+                        <picture class="cs-picture">
+                            <img loading="lazy" decoding="async" src="imgs/gallery/gallery1.jpeg" alt="gallery photo 1" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+                <!-- Image 2 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery2.jpeg">
+                        <picture class="cs-picture">
+                            <img loading="lazy" decoding="async" src="imgs/gallery/gallery2.jpeg" alt="gallery photo 2" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+                <!-- Image 3 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery3.jpeg">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="imgs/gallery/gallery3.jpeg" alt="gallery photo 3" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+                <!-- Image 4 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery4.jpg">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="imgs/gallery/gallery4.jpg" alt="gallery photo 4" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+                <!-- Image 5 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery5.jpg">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="imgs/gallery/gallery5.jpg" alt="gallery photo 5" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+                <!-- Image 6 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery6.jpeg">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="imgs/gallery/gallery6.jpeg" alt="gallery photo 6" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+                <!-- Image 7 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery7.jpeg">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="imgs/gallery/gallery7.jpeg" alt="gallery photo 7" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+                <!-- Image 8 -->
+                <li class="cs-item">
+                    <a href="imgs/gallery/gallery8.jpeg">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="imgs/gallery/gallery8.jpeg" alt="gallery photo 8" width="346" height="346">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+            <a href="#gallery-45" class="cs-button-solid">View Full Gallery</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+    
+    <section id="contact-1150">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h2 class="cs-title">We are Happy to Help You to Renovate Your Home</h2>
+            </div>
+            <div class="cs-contact-group">
+                <a class="cs-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.4145033976497!2d151.01929487648397!3d-33.9818854731834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bf1509d2680d%3A0xb818fffe377421c4!2s8%20Moonah%20Rd%2C%20Alfords%20Point%20NSW%202234!5e0!3m2!1szh-CN!2sau!4v1716648874056!5m2!1szh-CN!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+                <p class="cs-contact-text">
+                    We understand that your needs don't always adhere to a strict nine to five, so we offer after-hours service to accommodate your schedule; we're very flexible, so get in touch to book your property maintenance service. 
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <picture class="cs-icon-wrapper">
+                            <img aria-hidden="true" src="./imgs/icon/phone.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Phone</span>
+                            <a href="tel:499 385 998
+                            " class="cs-link">+61 499 385 998
+                            </a>
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <picture class="cs-icon-wrapper">
+                            <img aria-hidden="true" src="./imgs/icon/address.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                        </picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Address</span>
+                            <a href="" class="cs-link">8 Moonah Rd, Alfords Point NSW 2234
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1150" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-1150" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1150" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="number" id="phone-1150" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1150" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Make an Appointment</button>
+            </form>
+            <!--Bounce Graphic-->
+            <img class="cs-graphic cs-graphic1" loading="lazy" decoding="async" src="./imgs/icon/bounce.svg" alt="bounce" width="208" height="124">
+            <!--Coin Graphic-->
+            <img class="cs-graphic cs-graphic2" loading="lazy" decoding="async" src="./imgs/icon/coin.svg" alt="bounce" width="205" height="161">
+        </div>
+    </section>
+                                    
+
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+    
+    <footer id="cs-footer-269">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="imgs/logoLight.png" alt="logo" width="240" height="32">
+                </a>
+                <p class="cs-text">
+                    Trading hours
+                </p>
+                <ul class="cs-text cs-trading-hours">
+                    <li>
+                        <span class="cs-day">Monday - Saturday:</span> 
+                        <span class="cs-time">7AM - 5PM</span>
+                    </li>
+                    <li>
+                        <span class="cs-day">Sunday:</span> 
+                        <span class="cs-time">Closed</span>
+                    </li>
+                    <li>
+                        <span class="cs-day">Public holiday:</span> <span class="cs-time">Closed</span>
+                    </li>   
+                </ul>
+                
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Sitemap</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#hero-1785">Home</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#services-1628">Services</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#gallery-45">Gallery</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#contact-1150">Contact</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-contact">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Get in touch with us</span>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="tel: 123-456-7890">(61) 499 385 998</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="mailto:info@codestitch.com">apexhomeservice@hotmail.com</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="https://maps.app.goo.gl/4V6ZPhgrRHDLh2YSA">8 Moonah Rd, Alfords Point NSW 2234</a>
+                </li>
+                <!-- Social Media -->
+                <li class="cs-contact-li cs-social-group">
+                    <div class="cs-social">
+                        <a class="cs-social-link" aria-label="visit google profile" href="https://www.google.com/search?q=apex+home+service">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="./imgs/icon/google.svg" alt="google" width="11" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="./imgs/icon/Facebook.svg" alt="facebook" width="6" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="./imgs/icon/instagram.svg" alt="instagram" width="11" height="11">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>                      
+</html>
